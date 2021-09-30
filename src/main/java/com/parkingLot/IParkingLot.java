@@ -1,16 +1,15 @@
 package com.parkingLot;
 
 public interface IParkingLot {
-
         void parkVehicle(Car car) throws ParkingLotException;
 
-        void unParkVehicle(Car car) throws ParkingLotException;
+        void unParkVehicle(String key) throws ParkingLotException;
 
         boolean isParked(Car car);
 
-        boolean isUnParked(Car car);
+        void notifyToObserver(String message);
 
-        void notifyToMonitor();
+        void addObserver(IParkingObserver monitor);
 
-        void addMonitor(IParkingMonitor monitor);
+        String getVehicle(Car car);
 }
