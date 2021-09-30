@@ -1,6 +1,6 @@
 package com.parkingLot;
 
-public class AirportSecurity implements IParkingMonitor{
+public class AirportSecurity implements IParkingObserver {
     private String message;
 
     @Override

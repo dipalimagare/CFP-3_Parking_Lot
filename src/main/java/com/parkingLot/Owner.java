@@ -1,6 +1,6 @@
 package com.parkingLot;
 
-public class Owner implements IParkingMonitor{
+public class Owner implements IParkingObserver {
     private String message;
 
     @Override

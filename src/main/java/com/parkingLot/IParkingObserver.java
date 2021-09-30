@@ -1,6 +1,6 @@
 package com.parkingLot;
 
-public interface IParkingMonitor {
+public interface IParkingObserver {
     public void updateMessage(String message);
 
     public String getMessage();

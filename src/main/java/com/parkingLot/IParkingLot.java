@@ -8,9 +8,13 @@ public interface IParkingLot {
 
         boolean isParked(Car car);
 
-        boolean isUnParked(Car car);
+//        boolean isUnParked(Car car);
+//
+//        void notifyToMonitor();
+//
+//        void addMonitor(IParkingObserver monitor);
 
-        void notifyToMonitor();
+        void notifyToObserver(String message);
 
-        void addMonitor(IParkingMonitor monitor);
+        void addObserver(IParkingObserver monitor);
 }
