@@ -9,4 +9,6 @@ public class ParkingLot {
         this.vehicle = vehicle;
         return true;
     }
+
+
 }
